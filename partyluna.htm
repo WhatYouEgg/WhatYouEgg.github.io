@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link href="game.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        background-image:url("finalParty.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+
+  <body onload="finalDialogue()">
+    <audio id="music">
+      <source src="MLP.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="horn">
+      <source src="horn.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="cheer">
+      <source src="cheer.mp3" type="audio/mpeg">
+    </audio>
+    <div class="words">
+      <p id="dialogue"></p>
+    </div>
+    <button onclick="playMusic()" id="EasterEgg1">
+    </button>
+    <button onclick="playEffect1()" id="EasterEgg2">
+    </button>
+    <button onclick="playEffect2()" id="EasterEgg3">
+    </button>
+    <script src="game.js"></script>
+  </body>
+</html>
