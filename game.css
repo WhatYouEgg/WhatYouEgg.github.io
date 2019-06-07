@@ -1,16 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 #crown {
-position: absolute;
-width: 50px;
-height: 50px;
-left: 58%;
-top: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 58%;
+  top: 50%;
 }
 
-#form {
-
-}
-.words {
+button {
+  width: 230px;
+  height:80px;
+  border-radius: 10px;
+  border-width: 0px;
+  margin: 10px;
   font-size: 150%;
+  background-color: #b3d9ff;
+  color: #4da6ff;
+
+}
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #e6ccff;
+  color: #b366ff;
+}
+
+.words {
+  font-size: 160%;
   position: relative;
   width: 98%;
   text-align: center;
@@ -18,6 +36,8 @@ top: 50%;
   border: 8px solid #1A2A9A; /*colour of square border*/
   border-radius: 30px;
   box-shadow: 2px 2px 4px black;/*colour of shadow under box*/
+  font-family: 'Indie Flower', cursive;
+
 }
 
 #crownpart {
