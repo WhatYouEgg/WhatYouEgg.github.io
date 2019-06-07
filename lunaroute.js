@@ -171,7 +171,7 @@ function LtenthDialogue() {
   document.getElementById('rod').style.display = "none";
   document.getElementById('dialogue').innerHTML = "You got it!"
   document.getElementById('fishing').style.display = "none"
-  setTimeout(function(){ window.location.href="party.htm"}, 2000)
+  setTimeout(function(){ window.location.href="partyluna.htm"}, 2000)
 }
 
 function LtenthPlusDialogue() {
@@ -179,5 +179,23 @@ function LtenthPlusDialogue() {
   document.getElementById('rod').style.display = "none";
   document.getElementById('dialogue').innerHTML = "You got it!"
   document.getElementById('fishing').style.display = "none"
-  setTimeout(function(){ window.location.href="party.htm"}, 2000)
+  setTimeout(function(){ window.location.href="partyluna.htm"}, 2000)
+}
+
+function finalDialogue() {
+  document.getElementById('dialogue').innerHTML = "Hey, welcome back! Thank you for your help! Now, let's PARTY!!!";
+  setTimeout(function(){ alert("Find Easter Eggs on the page for surprises!")}, 2000)
+}
+
+
+function playMusic() {
+  return music.paused ? music.play() : music.pause();
+}
+
+function playEffect1() {
+  return horn.play();
+}
+
+function playEffect2() {
+  return cheer.play();
 }
