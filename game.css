@@ -1,0 +1,122 @@
+#crown {
+position: absolute;
+width: 50px;
+height: 50px;
+left: 58%;
+top: 50%;
+}
+
+#form {
+
+}
+.words {
+  font-size: 150%;
+  position: relative;
+  width: 98%;
+  text-align: center;
+  background-color: white; /*colour of box background*/
+  border: 8px solid #1A2A9A; /*colour of square border*/
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px black;/*colour of shadow under box*/
+}
+
+#crownpart {
+  background: url(Crownpart.png);
+  background-size: 85% 100%;
+  width: 1%;
+  height:10%;
+  border: 0px;
+  position: absolute;
+  left:84.6%;
+  top: 32.75%;
+}
+
+#rabbitpic {
+  background: url(rabbit.png);
+  background-repeat:no-repeat;
+  background-size: 85% 100%;
+  width: 6%;
+  height:10%;
+  border: 0px;
+  position: absolute;
+  left:42%;
+  top: 21%;
+}
+
+#EasterEgg1 {
+  background-color: transparent;
+  position:absolute;
+  left:81%;
+  top:44%;
+  width:7%;
+  height:27%;
+  border: 0px;
+}
+#EasterEgg2 {
+  background-color: transparent;
+  position:absolute;
+  left:15%;
+  top:56%;
+  width:10%;
+  height:13%;
+  border: 0px;
+}
+
+#EasterEgg3 {
+  background-color: transparent;
+  position:absolute;
+  bottom:0%;
+  width:99%;
+  height:10%;
+  border: 0px;
+}
+#triangle {
+  position: absolute;
+  height: 16%;
+  width: 21%;
+  left: 55%;
+  top: 30%;
+}
+
+#moon {
+  width: 21%;
+  left: 35%;
+  top:20%;
+  position: absolute;
+}
+
+#magnetpic {
+  position:absolute;
+  transform: rotate(100deg);
+  top:46%;
+  left:10%;
+  width: 8%;
+  height:20%;
+}
+
+#fishing {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  background: url(moon3.png);
+  background-size: 100% 100%;
+  width: 12%;
+  height:16%;
+  border: 0px;
+  top:20%;
+  position: absolute;
+  -webkit-animation: cssMove 1.5s linear 2s infinite alternate;
+  animation: cssMove 1.5s linear 2s infinite alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes cssMove {
+  0%   {left:0px; top:20%;}
+  100%  {left:90%; top:20%;}
+}
+
+/* Standard syntax */
+@keyframes cssMove {
+  0%   {left:0px; top:20%;}
+  100%  {left:90%; top:20%;}
+}

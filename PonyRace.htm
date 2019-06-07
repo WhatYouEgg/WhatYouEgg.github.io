@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <link href="game.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        background-image:url("race.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      button {
+        position: relative;
+        background-color: #FFD4F8;
+        border: none;
+        color: black;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 28px;
+        font-family: Chalkduster;
+        border-radius: 30px;
+
+      }
+
+      button::after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+
+      button:active::after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+
+
+    </style>
+
+  <body onload="fourthDialogue()">
+    <div class="words">
+      <p id="dialogue"></p>
+    </div>
+    <div class="buttons">
+      <center>
+        <button id="Magnet" onclick="magnetSuccess()">Use the magnet!</button>
+        <button id="Fly" onclick="fifthDialogue()">Use wings!</button>
+      </center>
+    </div>
+    <img src="magnet.png" id="magnetpic">
+    <script src="game.js"></script>
+  </body>
+</html>

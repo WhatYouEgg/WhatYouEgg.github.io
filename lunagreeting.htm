@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link href="game.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        background-image: url("lunagreeting.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body onload="LfirstDialogue()">
+    <div class="words">
+      <p id="dialogue"></p>
+    </div>
+    <center>
+      <button onclick="LsecondDialogue()" id="confirm">Sure!</button>
+      <button onclick="returnfDialogue()" id="reject">No...</button>
+      <a href="fluttershyForest.htm"><button id="FF">The Forest!</button></a>
+      <a href="lake.htm"><button id="AL">The Lake!</button></a>
+    </center>
+    <img src="moonpiece.png" id="moon">
+  <script src="lunaroute.js"></script>
+  </body>
+</html>

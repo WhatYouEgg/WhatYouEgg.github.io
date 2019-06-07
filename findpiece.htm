@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link href="game.css" rel="stylesheet" type="text/css" />
+  <style>
+    img{
+      height:200px; width:200px;
+    }
+    body{
+      background-image:url("ground.png");
+      background-repeat:no-repeat;
+      background-size:cover;
+    }
+    #table {
+      position: absolute;
+      top: 20%;
+      left:30%;
+    }
+    </style>
+  </head>
+  <body onload="LfifthDialogue()">
+      <div class="words">
+        <p id="dialogue"></p>
+      </div>
+      <table id="table" align="center">
+        <tr>
+          <td>
+            <img src="treeBlock.jpg" id="block1" onclick="changeSquare()">
+          </td>
+          <td>
+            <img src="treeBlock.jpg" id="block2" onclick="changeSquare()">
+          </td>
+          <td>
+            <img src="treeBlock.jpg" id="block3" onclick="changeSquare()">
+          </td>
+        </tr>
+        <tr>
+            <td>
+              <img src="treeBlock.jpg" id="block4" onclick="changeSquare()">
+          </td>
+          <td>
+            <img src="treeBlock.jpg" id="block5" onclick="changeSquare()">
+          </td>
+          <td>
+            <img src="treeBlock.jpg" id="block6" onclick="changeSquare()">
+          </td>
+        </tr>
+        <tr>
+            <td>
+              <img src="treeBlock.jpg" id="block7" onclick="rightSquare()">
+          </td>
+          <td>
+            <img src="treeBlock.jpg" id="block8" onclick="changeSquare()">
+          </td>
+          <td>
+            <img src="treeBlock.jpg" id="block9" onclick="changeSquare()">
+          </td>
+        </tr>
+      <center>
+        <button id="rod" onclick="LninthDialogue()">With a fishing rod!</button>
+        <button id="swim" onclick="LninthDialogue()">Let's dive in!</button>
+      </center>
+      <button id="fishing" onclick=LtenthPlusDialogue()></button>
+    <script src="lunaroute.js"></script>
+  </body>
+</html>

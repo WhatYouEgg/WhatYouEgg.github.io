@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link href="game.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body onload="secondDialogue()">
+    <div class="words">
+      <p id="dialogue"></p>
+    </div>
+    <center>
+      <button id="confirm" onclick="thirdDialogue()">Yes!</button>
+      <button id="reject" onclick="returnfDialogue()">No...</button>
+      <a href="PonyRace.htm"><button id="PR">Pony Race!</button></a>
+      <a href="school.htm"><button id="SF">School of Friendship!</button></a>
+    </center>
+
+    <div class="crown">
+      <img id="crown" src="crown.png">
+    </div>
+
+  <script src="game.js"></script>
+  </body>
+</html>
