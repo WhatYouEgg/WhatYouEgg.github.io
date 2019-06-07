@@ -171,7 +171,7 @@ function LtenthDialogue() {
   document.getElementById('rod').style.display = "none";
   document.getElementById('dialogue').innerHTML = "You got it!"
   document.getElementById('fishing').style.display = "none"
-  setTimeout(function(){ window.location.href="fluttershyForest.htm"}, 2000)
+  setTimeout(function(){ window.location.href="partyluna.htm"}, 2000)
 }
 
 function LtenthPlusDialogue() {
