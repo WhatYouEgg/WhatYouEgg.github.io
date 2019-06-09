@@ -14,6 +14,7 @@ function startGame() {
   document.body.style.backgroundImage = "url('BG.png')";
   document.getElementById('dialogue').innerHTML = "Hello, I am Rainbow Dash. <br> I haven't seen you around here, what's your name?";
   setTimeout(getName, 3000);
+  //the timeouts allow the next dialogue to come up in quick sucesion providing a flow to the game, and timed with the voice dialogue
   setTimeout(function(){ document.getElementById('dialogue').innerHTML = "Nice to meet you, " + name + "."; }, 7500 )
   setTimeout(function(){ document.getElementById('dialogue').innerHTML = "Do you want to go on an adventure?"}, 10000)
   setTimeout(function(){ document.getElementById('confirm').style.display = "inline"}, 13000)
@@ -52,6 +53,7 @@ function secondDialogue() {
   setTimeout(function(){ document.getElementById('crown').style.display = "inline";}, 3000 )
   setTimeout(function(){ document.getElementById('dialogue').innerHTML = "Hey, nice to meet you-";}, 3000);
   setTimeout(animation, 4000);
+  //crown animation Mu Feng worked on to fit with the audio dialogue
   setTimeout(function(){ document.getElementById('dialogue').innerHTML = "oh no, my CROWN HAS ROLLED AWAY. It has been broken into four pieces. <br>I need your help finding my crown. Will you help me?";}, 6000);
   setTimeout(function(){ document.getElementById('crown').style.display = "none";}, 6000 )
   setTimeout(function(){ document.getElementById('confirm').style.display = "inline"}, 9000)
@@ -92,7 +94,7 @@ function fourthDialogue() {
   setTimeout(function(){ document.getElementById('Magnet').style.display = "inline"}, 3000)
   setTimeout(function(){ document.getElementById('Fly').style.display = "inline"}, 3000)
 }
-
+//Dialogue for their math question and if they fail what will happen
 function fifthDialogue() {
   document.getElementById('Magnet').style.display = "none";
   document.getElementById('Fly').style.display = "none";
@@ -118,7 +120,7 @@ function fifthDialogue() {
   setTimeout(function(){ window.location.href = "NewYork.htm"}, 5000)
   }}, 5000)
 }
-
+//There is a 50% chance they will be successful in their attempts to make the game have more variety and choice that revolves around chance
 function magnetSuccess() {
 
   var x = Math.floor(1*Math.random()+2);
@@ -179,7 +181,7 @@ function finalDialogue() {
   document.getElementById('dialogue').innerHTML = "Hey, welcome back! Thank you for your help! Now, let's PARTY!!!";
   setTimeout(function(){ alert("Find Easter Eggs on the page for surprises!")}, 2000)
 }
-
+//Hidden easter eggs that play audio when clicked on the final scene
 function playMusic() {
   return music.paused ? music.play() : music.pause();
 }
