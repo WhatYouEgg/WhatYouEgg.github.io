@@ -6,6 +6,7 @@
   left: 58%;
   top: 50%;
 }
+/* sets the position for the crown */
 
 button {
   width: 280px;
@@ -26,6 +27,7 @@ button:hover {
   background-color: #e6ccff;
   color: #b366ff;
 }
+/* button decorations  */
 
 .words {
   font-size: 160%;
@@ -62,7 +64,7 @@ button:hover {
   left:42%;
   top: 21%;
 }
-
+/* positioning of rabbit in the tree, following are positioning of objects */
 #EasterEgg1 {
   background-color: transparent;
   position:absolute;
