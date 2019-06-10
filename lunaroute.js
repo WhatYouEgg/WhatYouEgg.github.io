@@ -86,7 +86,6 @@ function LfourthDialogue() {
   document.getElementById('rod').style.display = "none";
   document.getElementById('table').style.display = "none";
   document.getElementById('dialogue').innerHTML = "Now, let's save the bunny!"
-
 }
 
 function LfifthDialogue() {
@@ -98,6 +97,7 @@ function LfifthDialogue() {
 
 function changeSquare() {
     alert("This is not the moonpiece. Keep looking!");
+    img.style.visibility = "none"
   }
 
 function rightSquare() {
@@ -112,7 +112,13 @@ function rightSquare() {
   }, 5000)
   setTimeout(function(){ document.getElementById('swim').style.display = "inline"}, 7000)
   setTimeout(function(){ document.getElementById('rod').style.display = "inline"}, 7000)
+}
 
+function rightSquarePlus() {
+    document.getElementById("block7").src="moon2.png";
+    document.getElementById('dialogue').innerHTML = "You found the moon piece! Finally, we fixed the moon! Let's go celebrate!";
+    setTimeout(function(){ document.getElementById('table').style.display = "none"}, 3000)
+    setTimeout(function(){ window.location.href = "party.htm"}, 4000)
 }
 
 function animationDown() {
@@ -146,6 +152,9 @@ function LseventhDialogue() {
 }
 
 function LeighthDialogue() {
+  document.getElementById('triangle').style.display = "none"
+  document.getElementById('rabbit').style.display = "none";
+  document.getElementById('piece').style.display = "none";
   document.getElementById('fishing').style.display = "none";
   document.getElementById('swim').style.display = "none";
   document.getElementById('rod').style.display = "none";
@@ -171,7 +180,7 @@ function LtenthDialogue() {
   document.getElementById('rod').style.display = "none";
   document.getElementById('dialogue').innerHTML = "You got it!"
   document.getElementById('fishing').style.display = "none"
-  setTimeout(function(){ window.location.href="partyluna.htm"}, 2000)
+  setTimeout(function(){ window.location.href="party.htm"}, 2000)
 }
 
 function LtenthPlusDialogue() {
@@ -179,12 +188,31 @@ function LtenthPlusDialogue() {
   document.getElementById('rod').style.display = "none";
   document.getElementById('dialogue').innerHTML = "You got it!"
   document.getElementById('fishing').style.display = "none"
-  setTimeout(function(){ window.location.href="partyluna.htm"}, 2000)
+  setTimeout(function(){ document.getElementById('dialogue').innerHTML = "Let's continue our adventure!"}, 2000)
+  setTimeout(function(){
+    document.body.style.background = "url(forest.png)"
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+    document.getElementById('triangle').style.display = "inline"
+    document.getElementById('dialogue').innerHTML = "Hi guys, what brings you to the forest today?"
+    setTimeout(animationLeft, 3500)
+    setTimeout(function(){ document.getElementById('dialogue').innerHTML = "My friend and I are looking for moon pieces. Have you seen any?"}, 4000)
+    setTimeout(animationRight, 7500)
+    setTimeout(function(){ document.getElementById('dialogue').innerHTML = "My bunny friend saw something shiny in a tree. But she got stuck. Can you help her?"}, 8000)
+    setTimeout(animationLeft, 10500)
+    setTimeout(function(){ document.getElementById('dialogue').innerHTML = "You can save the bunny, then get the moon piece. Or you can find the moon piece while I rescue the bunny. <br>What do you want to do?"}, 11000)
+    setTimeout(function(){ document.getElementById('rabbit').style.display = "inline"}, 12000)
+    setTimeout(function(){ document.getElementById('piece').style.display = "inline"}, 12000)
+  }, 5000)
+
 }
 
 function finalDialogue() {
   document.getElementById('dialogue').innerHTML = "Hey, welcome back! Thank you for your help! Now, let's PARTY!!!";
   setTimeout(function(){ alert("Find Easter Eggs on the page for surprises!")}, 2000)
+  setTimeout(function(){ document.getElementById('dialogue').innerHTML = "Hey, would you like to go help Princess Celestia too?"}, 4000)
+  setTimeout(function(){ document.getElementById('yes').style.display = "inline"}, 6000)
+  setTimeout(function(){ document.getElementById('no').style.display = "inline"}, 6000)
 }
 
 
