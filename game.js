@@ -79,7 +79,7 @@ function thirdDialogue() {
   document.getElementById('confirm').style.display = "none";
   document.getElementById('reject').style.display = "none";
   document.getElementById('dialogue').innerHTML = "Great, thank you so much. You are the best; I will have a party for you, if you can return it."
-  setTimeout(function(){ document.getElementById('dialogue').innerHTML = "Here is a map and a picture of my crown. Each place on the map holds one pieces of my crown. <br>Where do you want to go first?";}, 3000);
+  setTimeout(function(){ document.getElementById('dialogue').innerHTML = "Where do you want to go first?";}, 3000);
   setTimeout(function(){ document.getElementById('PR').style.display = "inline"}, 6000)
   setTimeout(function(){ document.getElementById('SF').style.display = "inline"}, 6000)
 }
